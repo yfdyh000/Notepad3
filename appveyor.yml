@@ -150,7 +150,7 @@ before_package:
 
 # scripts to run after build
 after_build:
-  - 7z a Notepad3_%APPVEYOR_BUILD_VERSION%.zip Bin\**\*.exe Bin\**\lng
+  - 7z a Notepad3_%APPVEYOR_BUILD_VERSION%.zip .\Bin\**\*.exe .\Bin\**\lng
   - appveyor PushArtifact Notepad3_%APPVEYOR_BUILD_VERSION%.zip
  
 # to run your custom scripts instead of automatic MSBuild
